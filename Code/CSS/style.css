@@ -1,0 +1,148 @@
+
+
+html, body {
+    background: url(file:///Users/ilyasarif/Documents/Code%20Projects/Athan-App-Rahma/Code/CSS/masjid_background.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin: 0; height: 100%; overflow: hidden
+}
+
+.dim-background {
+    background-color:rgba(0, 0, 0, 0.25);
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+}
+
+header {
+    font-size: 60px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: white;
+    font-weight:900;
+    letter-spacing: 4px;
+}
+
+.Time-Holder-Box {
+    margin: auto;
+    margin-bottom: 40px;
+    width: 30%;
+    height: 12%;
+    border: 3px solid #000000;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 25px;
+}
+
+
+.Date {
+    margin: auto;
+    text-align: center;
+    font-size: 33px;
+    color: white;
+    letter-spacing: 3px;
+}
+
+.Time {
+    margin: auto;
+    text-align: center;
+    font-size: 60px;
+    font-weight: bolder;
+    font-family: digital-7;
+    color: white;
+    letter-spacing: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.Flex-Container {
+    margin: auto;
+    width: 90%;
+    height: 65%;
+    display: flex;
+}
+
+.Athan-Box {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 30%;
+    height: 100%;
+    border-radius: 25px;
+}
+
+.Iqama-Box {
+    margin-right: auto;
+    margin-left: auto;
+    background-color: hsla(0, 0%, 0%, 0.5);
+    width: 30%;
+    height: 100%;
+    border-radius: 25px;
+}
+
+.Widget-Container {
+    width: 30%;
+    height: 100%;
+    border-radius: 25px;
+}
+
+.Title-Section {
+    font-size: 50px;
+    color: white;
+    font-weight: bolder;
+    text-align: center;
+    padding: 10px;
+}
+
+.Prayer-Section {
+    color: white;
+    padding: 15px;
+    display: inline-block;
+    width: 92.4%;
+    margin-bottom: 20px;
+}
+
+
+
+.Prayer-Title {
+    margin: auto;
+    color: white;
+    float: left;
+    padding-left: 10px;
+    font-weight: bold;
+    font-size: 37px;
+
+}
+
+
+ .Prayer-Time {
+    color: white;
+    float: right;
+    padding-right: 10px;
+    padding-top: 10px;
+    font-size: 37px;
+    font-family: digital-7;
+    font-weight: bold;
+    text-align: right;
+    letter-spacing: 3px;
+}
+
+.Next-Prayer {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 45%;
+    width: 100%;
+    border-radius: 25px;
+}
+
+.Image-Carousel {
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-top: 15%;
+    height: 45%;
+    width: 100%;
+    border-radius: 25px;
+}
+
+
+
