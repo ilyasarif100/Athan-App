@@ -8,14 +8,14 @@ function updateClock() {
         hou = now.getHours();
         min = now.getMinutes();
         sec = now.getSeconds();
-        pe = "AM"
+        pe = " AM"
 
     if(hou == 0) {
         hou = 12;
     }
     if(hou > 12) {
         hou -= 12;
-        pe = "PM";
+        pe = " PM";
     }
 
     Number.prototype.pad = function(digits) {
@@ -69,14 +69,10 @@ async function getAthanTimes() {
         }   
     }
     var now = new Date();
-    
-
     var hours = now.getHours();
     var minutes = now.getMinutes();
-    console.log(hours + ":" + minutes);
 }
         
-
 function initClock() {
     updateClock();
     window.setInterval("updateClock()",  1);

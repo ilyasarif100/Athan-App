@@ -6,14 +6,18 @@ html, body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    margin: 0; height: 100%; overflow: hidden
+    margin: 0; 
+    height: 100%; 
 }
 
 .dim-background {
     background-color:rgba(0, 0, 0, 0.25);
     position: absolute;
-    height: 100vh;
-    width: 100vw;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    overflow: auto;
 }
 
 header {
@@ -28,12 +32,15 @@ header {
 
 .Time-Holder-Box {
     margin: auto;
-    margin-bottom: 40px;
-    width: 30%;
-    height: 12%;
+    margin-bottom: 60px;
+    width:fit-content;
+    height: fit-content%;
     border: 3px solid #000000;
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 25px;
+    padding: 5px;
+    overflow: hidden;
+    white-space: nowrap;
 }
 
 
@@ -43,6 +50,9 @@ header {
     font-size: 33px;
     color: white;
     letter-spacing: 3px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
 }
 
 .Time {
@@ -56,7 +66,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 10px;
+    margin: auto;
 }
 
 .Flex-Container {
@@ -69,8 +79,9 @@ header {
 .Athan-Box {
     background-color: rgba(0, 0, 0, 0.5);
     width: 30%;
-    height: 100%;
+    height: fit-content;
     border-radius: 25px;
+    overflow: hidden;
 }
 
 .Iqama-Box {
@@ -78,14 +89,16 @@ header {
     margin-left: auto;
     background-color: hsla(0, 0%, 0%, 0.5);
     width: 30%;
-    height: 100%;
+    height: fit-content;
     border-radius: 25px;
+    overflow: hidden;
 }
 
 .Widget-Container {
     width: 30%;
     height: 100%;
     border-radius: 25px;
+    overflow: hidden;
 }
 
 .Title-Section {
@@ -110,7 +123,7 @@ header {
     margin: auto;
     color: white;
     float: left;
-    padding-left: 10px;
+    padding: 5px;
     font-weight: bold;
     font-size: 37px;
 
@@ -120,7 +133,7 @@ header {
  .Prayer-Time {
     color: white;
     float: right;
-    padding-right: 10px;
+    padding: 5px;
     padding-top: 10px;
     font-size: 37px;
     font-family: digital-7;
@@ -131,15 +144,15 @@ header {
 
 .Next-Prayer {
     background-color: rgba(0, 0, 0, 0.5);
-    height: 45%;
+    height: 43.5%;
     width: 100%;
     border-radius: 25px;
 }
 
 .Image-Carousel {
     background-color: rgba(0, 0, 0, 0.5);
-    margin-top: 15%;
-    height: 45%;
+    margin-top: 4%;
+    height: 43.5%;
     width: 100%;
     border-radius: 25px;
 }
