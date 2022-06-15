@@ -1,7 +1,7 @@
 
 
 html, body {
-    background: url(file:///Users/ilyasarif/Documents/Code%20Projects/Athan-App-Rahma/Code/CSS/masjid_background.png) no-repeat center center fixed;
+    background: url(file:///Users/ilyasarif/Documents/Code%20Projects/Athan-App/Code/CSS/masjid_background.png) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -34,7 +34,7 @@ header {
     margin: auto;
     margin-bottom: 60px;
     width:fit-content;
-    height: fit-content%;
+    height: fit-content;
     border: 3px solid #000000;
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 25px;
@@ -71,9 +71,11 @@ header {
 
 .Flex-Container {
     margin: auto;
+    margin-bottom: 40px;
     width: 90%;
-    height: 65%;
+    height: fit-content; 
     display: flex;
+    background-color: blueviolet;
 }
 
 .Athan-Box {
@@ -95,8 +97,8 @@ header {
 }
 
 .Widget-Container {
+    background-color: blue;
     width: 30%;
-    height: 100%;
     border-radius: 25px;
     overflow: hidden;
 }
@@ -145,16 +147,38 @@ header {
 .Next-Prayer {
     background-color: rgba(0, 0, 0, 0.5);
     height: 43.5%;
-    width: 100%;
     border-radius: 25px;
+}
+
+.Sect1-Prayer-Widget {
+    color: white;
+    width: 50%;
+    padding: 10px;
+    overflow: hidden;    
+}
+
+#prayerWidgetTitle {
+    font-size: 30px;
+}
+
+#prayerName {
+    font-size: 40px;
+    font-weight: bold;
+    width: fit-content;
+}
+
+#prayerTime {
+    font-size: 30px;
+    font-weight: bold;
 }
 
 .Image-Carousel {
     background-color: rgba(0, 0, 0, 0.5);
-    margin-top: 4%;
+    margin-top: 20.5%;
     height: 43.5%;
-    width: 100%;
+    width: 30%;
     border-radius: 25px;
+    bottom: 0;
 }
 
 
