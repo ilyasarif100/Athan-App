@@ -1,4 +1,4 @@
-
+//Update Current Clock Function
 function updateClock() {
     var now = new Date();
     var dname = now.getDay();
@@ -32,8 +32,9 @@ function updateClock() {
     for(var i = 0; i<ids.length; i++)
     document.getElementById(ids[i]).firstChild.nodeValue = values[i];
 
-}
+}//end of update clock function
 
+//Get Athan Times from athan API function
 const api_url = 'https://api.aladhan.com/v1/timingsByAddress?address=phoenix,%20AZ';
 async function getAthanTimes() {
     const response = await fetch(api_url);
@@ -47,6 +48,13 @@ async function getAthanTimes() {
     var athanTimes = [fajrAthan, dhuhrAthan, asrAthan, maghribAthan, ishaAthan];
     var id = ["fajr-time", "dhuhr-time", "asr-time", "maghrib-time", "isha-time"];
 
+    var fajrInt = parseInt(fajrAthan.replace(/\D+/g, ""));
+    var dhuhrInt = parseInt(dhuhrAthan.replace(/\D+/g, ""));
+    var asrInt = parseInt(asrAthan.replace(/\D+/g, ""));
+    var maghribInt = parseInt(maghribAthan.replace(/\D+/g, ""));
+    var ishaInt = parseInt(ishaAthan.replace(/\D+/g, ""));
+    var displayFajrNextAt = ishaInt + ((fajrInt + 2400) - ishaInt) / 2;
+    console.log(displayFajrNextAt);
     for (let i = 0; i < athanTimes.length; i++) {
         if (athanTimes[i].charAt(0) == "0") {
             athanTimes[i] = athanTimes[i].replace('0','');
@@ -62,9 +70,7 @@ async function getAthanTimes() {
                 stringNum += num.toString();
                 //replace first 2 chars of athanTimes[i] with new string var
                 athanTimes[i] = stringNum + athanTimes[i].slice(2, athanTimes[i].length);
-            }
-                
-                
+            }       
             document.getElementById(id[i]).innerHTML = athanTimes[i] + " PM";
         }   
     }
@@ -72,7 +78,11 @@ async function getAthanTimes() {
     var hours = now.getHours();
     var minutes = now.getMinutes();
 }
-        
+
+
+
+    
+//call functions within html script
 function initClock() {
     updateClock();
     window.setInterval("updateClock()",  1);

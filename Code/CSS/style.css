@@ -75,7 +75,6 @@ header {
     width: 90%;
     height: fit-content; 
     display: flex;
-    background-color: blueviolet;
 }
 
 .Athan-Box {
@@ -97,7 +96,6 @@ header {
 }
 
 .Widget-Container {
-    background-color: blue;
     width: 30%;
     border-radius: 25px;
     overflow: hidden;
@@ -152,9 +150,9 @@ header {
 
 .Sect1-Prayer-Widget {
     color: white;
-    width: 50%;
+    width: fit-content;
     padding: 10px;
-    overflow: hidden;    
+    overflow: hidden;
 }
 
 #prayerWidgetTitle {
@@ -164,7 +162,6 @@ header {
 #prayerName {
     font-size: 40px;
     font-weight: bold;
-    width: fit-content;
 }
 
 #prayerTime {
@@ -176,10 +173,6 @@ header {
     background-color: rgba(0, 0, 0, 0.5);
     margin-top: 20.5%;
     height: 43.5%;
-    width: 30%;
     border-radius: 25px;
     bottom: 0;
 }
-
-
-
