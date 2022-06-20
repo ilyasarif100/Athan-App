@@ -209,7 +209,6 @@ async function getAthanTimes() {
         else
             document.getElementById("prayerTime").innerHTML = athanTimes[4] + " AM";
     }
-    console.log(nextFajr)
 }
 
 
@@ -220,5 +219,5 @@ function initClock() {
     updateClock();
     window.setInterval("updateClock()",  1);
     getAthanTimes();
-    window.setInterval("getAthanTimes()", 60000/6);
+    window.setInterval("getAthanTimes()", 60000/60);
 }
